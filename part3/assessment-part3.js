@@ -14,8 +14,9 @@
 
 // CODE HERE...
 
-
-
+function callBinding(magicAnimals, updateAnimal, id) {
+  return magicAnimals;
+}
 // *************
 // * PROBLEM 2 *
 // *************
@@ -29,7 +30,9 @@
 
 // CODE HERE...
 
-
+function applyBinding(magicAnimal, updateAnimal, id) {
+  return updateAnimal;
+}
 
 // *************
 // * PROBLEM 3 *
@@ -47,9 +50,16 @@
 
 var foo;
 
+const promiseMe = function($q) {
+  return new Promise(resolve => {
+    let wait = setTimeout(() => {
+      clearTimeout(wait);
+      resolve("idk");
+    }, 20);
+  });
+};
+
 // CODE HERE...
-
-
 
 // *************
 // * PROBLEM 4 *
@@ -64,3 +74,7 @@ var foo;
 // and then resolve the array as you complete your promise.
 
 // CODE HERE...
+
+function emailList($q, $http) {
+  return $q;
+}
